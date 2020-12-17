@@ -1,0 +1,22 @@
+header{
+  .header__logo {
+      height: 40px;
+    }
+    #portada {
+      width: 100%;
+      height: auto;
+    }
+    ul {
+      margin: 0px 0px 10px 0px;
+    }
+    .logoRedes {
+      width: 25px;
+      height: 25px;
+    }
+    .navbar {
+      background-image: linear-gradient(to right, $color-black, $color-blue);
+    }
+    .nav-link {
+      font-family: $main-font;
+    }
+}

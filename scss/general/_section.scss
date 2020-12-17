@@ -1,0 +1,118 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }  
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: $main-font;
+    font-size: 1.1rem;
+  }
+  main {
+    background-color: $color-white;
+  }
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: $color-white;
+  }
+  a:hover {
+    color: $color-light-blue;
+  }
+  a{
+    transition: all 0.2s linear
+  }
+  h2 {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 1, 5rem;
+    color: $color-light-blue2;
+  }
+  p {
+    color: $color-black;
+    padding-top: 10px;
+  }
+  form label {
+    display: block;
+    padding: 10px 10px 10px 0px;
+  }
+  #button {
+    display: inline;
+  }
+  section {
+    padding-top: 80px;
+  }
+  .section__galeriaproductos {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    .imgProductos {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .galeriaImg:nth-child(3) {
+      grid-row-start: span 2;
+    }
+    .galeriaImg:nth-child(6) {
+      grid-column-start: span 2;
+    }
+    .galeriaImg:nth-child(9) {
+      grid-column-start: span 2;
+    }
+    .galeriaImg:nth-child(10) {
+      grid-row-start: span 2;
+    }
+    .galeriaImg:nth-child(12) {
+      grid-column-start: span 2;
+    }
+  }
+  @media (min-width: 768px) {
+    .section__galeriaproductos {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 10px 150px 10px 150px;
+      .galeriaImg:nth-child(3) {
+        grid-column-start: span 2;
+      }
+      .galeriaImg:nth-child(6) {
+        grid-column-start: span 3;
+      }
+      .galeriaImg:nth-child(8) {
+        grid-column-start: span 2;
+      }
+      .galeriaImg:nth-child(10) {
+        grid-row-start: span 2;
+      }
+      .galeriaImg:nth-child(11) {
+        grid-column-start: span 1;
+      }
+      .galeriaImg:nth-child(12) {
+        grid-column-start: span 2;
+      }
+    }
+  }
+  .btn-info {
+    margin-top: 20px;
+  }
+  .custom-switch {
+    margin-top: 20px;
+  }
+  .custom-control-label {
+    padding: 0px;
+  }
+  .card{
+    .card__1{
+      height: $ancho/4;
+    }
+    .card__2{
+      height: $ancho/3;
+    }
+    .card__3{
+      height: $ancho/2;
+    }
+  }
