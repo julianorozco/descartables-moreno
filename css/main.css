@@ -5,7 +5,8 @@ footer {
   justify-items: center;
   align-items: center;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "logo menufooter" "redes copyright"; }
+  grid-template-areas: "logo menufooter"
+ "redes copyright"; }
   footer ul {
     padding: 10px; }
     footer ul li {
@@ -40,7 +41,10 @@ footer {
     background-color: #142850;
     padding: 20px;
     grid-template-columns: 100%;
-    grid-template-areas: "logo" "redes" "menufooter" "copyright"; } }
+    grid-template-areas: "logo"
+ "redes"
+ "menufooter"
+ "copyright"; } }
 
 * {
   margin: 0;
@@ -68,7 +72,7 @@ a:hover {
 a {
   transition: all 0.2s linear; }
 
-h2 {
+h1 {
   font-family: Helvetica, sans-serif;
   text-transform: uppercase;
   font-family: inherit;
