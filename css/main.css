@@ -1,60 +1,43 @@
-footer {
-  padding: 20px;
-  background-image: linear-gradient(to bottom, #142850, #00587a);
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "logo menufooter"
- "redes copyright"; }
-  footer ul {
-    padding: 10px; }
-    footer ul li {
-      list-style-type: none;
-      display: inline;
-      margin: 20px;
-      font-size: 2rem; }
-  footer .footer1 {
-    grid-area: logo;
-    align-self: center; }
-  footer .footer2 {
-    grid-area: redes;
-    padding-right: 20px; }
-  footer .footer3 {
-    grid-area: menufooter;
-    padding-right: 70px; }
-  footer .footer4 {
-    grid-area: copyright; }
-  footer .footer__menu {
-    font-family: "Open Sans", "Helvetica", "Arial";
-    font-size: 1rem;
-    display: list-item; }
-  footer .footer__logo {
-    height: 130px; }
-  footer .copy {
-    color: #faf9f9;
-    padding-top: 10px;
-    padding-left: 20px; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.ttf"); }
 
-@media only screen and (max-width: 600px) {
-  footer {
-    background-color: #142850;
-    padding: 20px;
-    grid-template-columns: 100%;
-    grid-template-areas: "logo"
- "redes"
- "menufooter"
- "copyright"; } }
+.footerLogo {
+  height: 80px;
+  width: 90px; }
 
-* {
-  margin: 0;
-  padding: 0; }
+.bg-info {
+  background: #00a8cc !important; }
+
+.bg-primary {
+  background: #00a8cc !important; }
+
+.text-muted {
+  color: #faf9f9 !important; }
+
+.footerNombre {
+  color: #faf9f9;
+  font-family: "Open Sans";
+  font-size: 18px;
+  margin: 10px 10px 10px 0px; }
+
+.footerTitulo {
+  color: #faf9f9;
+  font-family: "Open Sans";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-style: normal; }
+
+.copy {
+  color: #faf9f9;
+  font-family: "Open Sans";
+  font-size: 14px;
+  opacity: 0.7; }
 
 html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Open Sans", "Helvetica", "Arial";
   font-size: 1.1rem; }
 
 main {
@@ -67,31 +50,51 @@ a:active {
   color: #faf9f9; }
 
 a:hover {
-  color: #58d6ff; }
+  color: #faf9f9;
+  font-weight: bold; }
 
-a {
-  transition: all 0.2s linear; }
-
-h1 {
-  font-family: Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-family: inherit;
+h2 {
+  font-family: "Open Sans";
   font-size: 1, 5rem;
-  color: #00a8cc; }
+  color: #00a8cc;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic; }
+
+h2.white {
+  color: #faf9f9; }
 
 p {
-  color: #142850;
-  padding-top: 10px; }
+  font-size: 20px;
+  color: #6e6e6e;
+  margin: 20px 80px 20px 80px;
+  text-align: center; }
 
 form label {
   display: block;
   padding: 10px 10px 10px 0px; }
 
+div.form-group {
+  margin: 0px 0px 0px 0px; }
+
 #button {
   display: inline; }
 
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic; }
+
 section {
   padding-top: 80px; }
+
+#productos {
+  background-image: linear-gradient(rgba(0, 168, 204, 0.7), rgba(88, 214, 255, 0.7));
+  background-size: cover; }
+
+.nosotrosIcon {
+  font-size: 80px;
+  color: #00a8cc; }
 
 .section__galeriaproductos {
   display: grid;
@@ -132,7 +135,15 @@ section {
       grid-column-start: span 2; } }
 
 .btn-info {
-  margin-top: 20px; }
+  background-color: #00a8cc;
+  border-color: #00a8cc;
+  color: #faf9f9;
+  margin: 20px 0px 20px 10px; }
+
+.btn-info:hover {
+  background-color: #58d6ff;
+  border-color: #58d6ff;
+  color: #faf9f9; }
 
 .custom-switch {
   margin-top: 20px; }
@@ -140,31 +151,122 @@ section {
 .custom-control-label {
   padding: 0px; }
 
-.card .card__1 {
-  height: 125px; }
+.modal-title {
+  font-family: "Open Sans";
+  color: black; }
 
-.card .card__2 {
-  height: 166.66667px; }
+.modal-body {
+  font-family: "Open Sans";
+  color: black; }
 
-.card .card__3 {
-  height: 250px; }
+.price {
+  font-size: 1.75rem;
+  padding: 0px !important;
+  margin: 0px !important; }
+
+.card {
+  color: #00a8cc; }
+
+.card.body {
+  margin: 0px;
+  padding: 0px; }
 
 header .header__logo {
   height: 40px; }
+
+header .header__nombre {
+  color: #faf9f9;
+  font-family: "Open Sans";
+  font-size: 18px;
+  margin: 10px 10px 10px 10px; }
 
 header #portada {
   width: 100%;
   height: auto; }
 
-header ul {
-  margin: 0px 0px 10px 0px; }
+header .navbar-brand {
+  display: flex;
+  justify-items: flex-start;
+  margin: 0px; }
 
 header .logoRedes {
   width: 25px;
   height: 25px; }
 
+header .redes {
+  font-size: 20px;
+  padding-top: 4px;
+  margin-left: -15px; }
+
 header .navbar {
-  background-image: linear-gradient(to right, #142850, #00587a); }
+  background: linear-gradient(60deg, #142850 10%, #00a8cc 80%);
+  background: -webkit-linear-gradient(60deg, #142850 10%, #00a8cc 80%);
+  background: -moz-linear-gradient(60deg, #142850 10%, #00a8cc 80%); }
 
 header .nav-link {
-  font-family: "Open Sans", "Helvetica", "Arial"; }
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 11px;
+  margin-left: 11px;
+  transition: transform .1s; }
+
+header .nav-link:hover {
+  transform: scale(1.2); }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.custom-toggler.navbar-toggler {
+  border-color: #faf9f9; }
+
+.navbar .navbar-collapse {
+  text-align: center; }
+
+.bg-dark {
+  background: transparent !important;
+  transition: 0.75s ease; }
+
+.bg-dark.scrolled {
+  background: rgba(0, 168, 204, 0.8) !important; }
+
+@media (max-width: 991px) {
+  .bg-dark {
+    background: #00a8cc !important; }
+  .bg-dark.scrolled {
+    background: #00a8cc !important; } }
+
+.presentacion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Open Sans";
+  text-align: center;
+  white-space: nowrap; }
+  .presentacion h1 {
+    font-size: 65px;
+    font-weight: bold;
+    text-shadow: #00587a 2px 2px; }
+  .presentacion h3 {
+    text-shadow: #00587a 2px 2px; }
+  .presentacion .btn {
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #faf9f9;
+    border-color: #faf9f9;
+    color: #00a8cc; }
+  .presentacion .btn:hover {
+    background-color: #00a8cc;
+    border-color: #00a8cc;
+    color: #faf9f9; }
+
+@media screen and (max-width: 400px) {
+  .presentacion .btn {
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 10px; } }

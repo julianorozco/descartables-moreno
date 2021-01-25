@@ -1,12 +1,18 @@
 // Colors
 $color-white: #faf9f9;
-$color-light-blue: #58d6ff;
+$color-grey:#6e6e6e;
+$color-light-blue:  #58d6ff;
 $color-light-blue2: #00a8cc;
 $color-black: #142850;
 $color-blue: #00587a;
 
 // Fonts
-$main-font: "Open Sans", "Helvetica", "Arial";
+@font-face{
+font-family: "Open Sans";
+src: url("../fonts/opensans.ttf")
+}
+$vidaloka: "Vidaloka";
+$main-font: "Open Sans";
 
 // Size
 $ancho: 500px;

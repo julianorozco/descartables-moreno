@@ -1,60 +1,32 @@
-  footer {
-    padding: 20px;
-    background-image: linear-gradient(to bottom, $color-black, $color-blue);
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-      "logo menufooter"
-      "redes copyright";
-      ul{
-        padding: 10px;
-        li{
-          list-style-type: none;
-          display: inline;
-          margin: 20px;
-          font-size: 2rem;
-        }
-      }
-      .footer1 {
-        grid-area: logo;
-        align-self: center;
-      }
-      .footer2 {
-        grid-area: redes;
-        padding-right: 20px;
-      }
-      .footer3 {
-        grid-area: menufooter;
-        padding-right: 70px;
-      }
-      .footer4 {
-        grid-area: copyright;
-      }
-      .footer__menu {
-        font-family: $main-font;
-        font-size: 1rem;
-        display: list-item;
-      }
-      .footer__logo {
-        height: 130px;
-      }
-      .copy {
-        color: $color-white;
-        padding-top: 10px;
-        padding-left: 20px;
-      }
+  .footerLogo{
+    height: 80px;
+    width: 90px;
   }
-  @media only screen and (max-width: 600px) {
-    footer {
-      background-color: $color-black;
-      padding: 20px;
-      grid-template-columns: 100%;
-      grid-template-areas:
-        "logo"
-        "redes"
-        "menufooter"
-        "copyright";
+  .bg-info{
+      background: $color-light-blue2 !important;
     }
+  .bg-primary{
+    background: $color-light-blue2 !important;
+  }
+  .text-muted{
+    color: $color-white !important;
+  }
+  .footerNombre{
+    color: $color-white;
+    font-family: $main-font;
+    font-size: 18px;
+    margin: 10px 10px 10px 0px;
+    }
+  .footerTitulo{
+    color: $color-white;
+    font-family: $main-font;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+  .copy{
+    color: $color-white;
+    font-family: $main-font;
+    font-size: 14px;
+    opacity: 0.7;
   }

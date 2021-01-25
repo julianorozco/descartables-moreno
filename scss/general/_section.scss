@@ -1,12 +1,7 @@
-  * {
-    margin: 0;
-    padding: 0;
-  }  
   html{
     scroll-behavior: smooth;
   }
   body {
-    font-family: $main-font;
     font-size: 1.1rem;
   }
   main {
@@ -19,32 +14,57 @@
     color: $color-white;
   }
   a:hover {
-    color: $color-light-blue;
+    color: $color-white;
+    font-weight: bold;
   }
-  a{
-    transition: all 0.2s linear
-  }
-  h1 {
-    font-family: Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-family: inherit;
+  h2 {
+    font-family: $main-font;
     font-size: 1, 5rem;
     color: $color-light-blue2;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+  }
+  h2.white{
+    color: $color-white;
   }
   p {
-    color: $color-black;
-    padding-top: 10px;
+    font-size: 20px;
+    color: $color-grey;
+    margin: 20px 80px 20px 80px;
+    text-align: center;
   }
   form label {
     display: block;
     padding: 10px 10px 10px 0px;
   }
+  div.form-group{
+    margin: 0px 0px 0px 0px;
+  }
   #button {
     display: inline;
+  }
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
   }
   section {
     padding-top: 80px;
   }
+  #productos{
+background-image: linear-gradient(rgba($color-light-blue2, 0.7), rgba($color-light-blue, 0.7));
+background-size: cover;
+}
+//   #contacto{
+//   background-image: linear-gradient(rgba($color-black, 0.5), rgba($color-light-blue2, 0.5)),url(../img/termometro.jpeg);
+//   background-size: cover;
+//   color: white;
+// }
+.nosotrosIcon{
+  font-size: 80px;
+  color: $color-light-blue2;
+}
   .section__galeriaproductos {
     display: grid;
     grid-gap: 10px;
@@ -97,7 +117,15 @@
     }
   }
   .btn-info {
-    margin-top: 20px;
+  background-color: $color-light-blue2;
+  border-color: $color-light-blue2;
+  color: $color-white;
+  margin: 20px 0px 20px 10px;
+  }
+  .btn-info:hover{
+  background-color: $color-light-blue;
+  border-color: $color-light-blue;
+  color: $color-white;
   }
   .custom-switch {
     margin-top: 20px;
@@ -105,14 +133,23 @@
   .custom-control-label {
     padding: 0px;
   }
+  .modal-title{
+    font-family: $main-font;
+    color: black;
+  }
+  .modal-body{
+    font-family: $main-font;
+    color: black;
+  }
+  .price {
+    font-size: 1.75rem;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
   .card{
-    .card__1{
-      height: $ancho/4;
-    }
-    .card__2{
-      height: $ancho/3;
-    }
-    .card__3{
-      height: $ancho/2;
-    }
+    color: $color-light-blue2;
+  }
+  .card.body{
+    margin: 0px;
+    padding: 0px;
   }
