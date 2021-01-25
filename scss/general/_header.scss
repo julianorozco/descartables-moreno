@@ -2,11 +2,24 @@ header{
   .header__logo {
       height: 40px;
     }
+    @media (max-width: 340px){
+      .header__logo{
+        height: 30px;
+      }
+    }
   .header__nombre{
     color: $color-white;
     font-family: $main-font;
     font-size: 18px;
     margin: 10px 10px 10px 10px;
+    }
+    @media (max-width: 340px){
+      .header__nombre{
+        height: 30px;
+        font-size: 1rem;
+        margin: 0px;
+        padding: 5px;
+      }
     }
     #portada {
       width: 100%;
@@ -85,6 +98,18 @@ background: rgba($color-light-blue2, 0.8) !important;
   h3{
     text-shadow: $color-blue 2px 2px;
   }
+  @media screen and (max-width: 990px) {
+    h1 {
+      margin-top: 50px;
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 630px) {
+    h1 {
+      margin-top: 50px;
+      font-size: 15px;
+    }
+  }
   .btn{
     border-radius: 30px;
     padding: 15px 30px 15px 30px;
@@ -105,7 +130,13 @@ background: rgba($color-light-blue2, 0.8) !important;
       .btn{
         border-radius: 30px;
         font-weight: bold;
-        font-size: 10px;
+        font-size: 0.6rem;
+        padding: 10px;
         }
+    }
+  }
+    @media screen and (max-width: 990px){
+    .carousel{
+      padding-top: 50px;
     }
   }

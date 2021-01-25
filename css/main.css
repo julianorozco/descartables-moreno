@@ -174,11 +174,22 @@ section {
 header .header__logo {
   height: 40px; }
 
+@media (max-width: 340px) {
+  header .header__logo {
+    height: 30px; } }
+
 header .header__nombre {
   color: #faf9f9;
   font-family: "Open Sans";
   font-size: 18px;
   margin: 10px 10px 10px 10px; }
+
+@media (max-width: 340px) {
+  header .header__nombre {
+    height: 30px;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 5px; } }
 
 header #portada {
   width: 100%;
@@ -252,6 +263,14 @@ header .nav-link:hover {
     text-shadow: #00587a 2px 2px; }
   .presentacion h3 {
     text-shadow: #00587a 2px 2px; }
+  @media screen and (max-width: 990px) {
+    .presentacion h1 {
+      margin-top: 50px;
+      font-size: 20px; } }
+  @media screen and (max-width: 630px) {
+    .presentacion h1 {
+      margin-top: 50px;
+      font-size: 15px; } }
   .presentacion .btn {
     border-radius: 30px;
     padding: 15px 30px 15px 30px;
@@ -269,4 +288,9 @@ header .nav-link:hover {
   .presentacion .btn {
     border-radius: 30px;
     font-weight: bold;
-    font-size: 10px; } }
+    font-size: 0.6rem;
+    padding: 10px; } }
+
+@media screen and (max-width: 990px) {
+  .carousel {
+    padding-top: 50px; } }
