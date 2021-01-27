@@ -1,155 +1,126 @@
-  html{
-    scroll-behavior: smooth;
-  }
-  body {
-    font-size: 1.1rem;
-  }
-  main {
-    background-color: $color-white;
-  }
-  a:link,
-  a:visited,
-  a:active {
-    text-decoration: none;
-    color: $color-white;
-  }
-  a:hover {
-    color: $color-white;
-    font-weight: bold;
-  }
-  h2 {
-    font-family: $main-font;
-    font-size: 1, 5rem;
-    color: $color-light-blue2;
-    font-weight: bold;
-    text-align: center;
-    font-style: italic;
-  }
-  h2.white{
-    color: $color-white;
-  }
-  p {
-    font-size: 20px;
-    color: $color-grey;
-    margin: 20px 80px 20px 80px;
-    text-align: center;
-  }
-  form label {
-    display: block;
-    padding: 10px 10px 10px 0px;
-  }
-  div.form-group{
-    margin: 0px 0px 0px 0px;
-  }
-  #button {
-    display: inline;
-  }
-  .form-control::placeholder {
-    font-size: 0.95rem;
-    color: #aaa;
-    font-style: italic;
-  }
-  section {
-    padding-top: 80px;
-  }
-  #productos{
-background-image: linear-gradient(rgba($color-light-blue2, 0.7), rgba($color-light-blue, 0.7));
-background-size: cover;
+a:link,a:visited,a:active {
+  color: $color-white;
+  text-decoration: none;
 }
-//   #contacto{
-//   background-image: linear-gradient(rgba($color-black, 0.5), rgba($color-light-blue2, 0.5)),url(../img/termometro.jpeg);
-//   background-size: cover;
-//   color: white;
-// }
-.nosotrosIcon{
-  font-size: 80px;
-  color: $color-light-blue2;
+a:hover {
+  color: $color-white;
+  font-weight: bold;
 }
-  .section__galeriaproductos {
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    .imgProductos {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .galeriaImg:nth-child(3) {
-      grid-row-start: span 2;
-    }
-    .galeriaImg:nth-child(6) {
-      grid-column-start: span 2;
-    }
-    .galeriaImg:nth-child(9) {
-      grid-column-start: span 2;
-    }
-    .galeriaImg:nth-child(10) {
-      grid-row-start: span 2;
-    }
-    .galeriaImg:nth-child(12) {
-      grid-column-start: span 2;
-    }
-  }
-  @media (min-width: 768px) {
-    .section__galeriaproductos {
-      grid-template-columns: repeat(4, 1fr);
-      padding: 10px 150px 10px 150px;
-      .galeriaImg:nth-child(3) {
-        grid-column-start: span 2;
-      }
-      .galeriaImg:nth-child(6) {
-        grid-column-start: span 3;
-      }
-      .galeriaImg:nth-child(8) {
-        grid-column-start: span 2;
-      }
-      .galeriaImg:nth-child(10) {
-        grid-row-start: span 2;
-      }
-      .galeriaImg:nth-child(11) {
-        grid-column-start: span 1;
-      }
-      .galeriaImg:nth-child(12) {
-        grid-column-start: span 2;
-      }
-    }
-  }
-  .btn-info {
+body {
+  font-size: 1.1rem;
+}
+.btn-info {
   background-color: $color-light-blue2;
   border-color: $color-light-blue2;
   color: $color-white;
-  margin: 20px 0px 20px 10px;
-  }
-  .btn-info:hover{
+  margin: 20px 0px 50px 10px;
+}
+.btn-info:hover{
   background-color: $color-light-blue;
   border-color: $color-light-blue;
   color: $color-white;
+}
+.card{
+  color: $color-light-blue2;
+}
+.card.body{
+  margin: 0px;
+  padding: 0px;
+}
+.custom-switch {
+  margin-top: 20px;
+}
+.custom-control-label {
+  padding: 0px;
+}
+div.form-group{
+  margin: 0px 0px 0px 0px;
+}
+.form-control::placeholder {
+  color: #aaa;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+form label {
+  display: block;
+  padding: 10px 10px 10px 0px;
+}
+html{
+  scroll-behavior: smooth;
+}
+h2 {
+  color: $color-light-blue2;
+  font-family: $main-font;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+h2.white{
+  color: $color-white;
+}
+@media (max-width: 600px){
+  h2 {
+    font-size: 30px;
   }
-  .custom-switch {
-    margin-top: 20px;
+}
+main {
+  background-color: $color-white;
+}
+.modal-body{
+  color: $color-black;
+  font-family: $main-font;
+}
+.modal-title{
+  color: $color-black;
+  font-family: $main-font;
+}
+.nosotrosIcon{
+  color: $color-light-blue2;
+  font-size: 80px;
+}
+@media (max-width: 600px){
+  .nosotrosIcon{
+    font-size: 50px;
   }
-  .custom-control-label {
-    padding: 0px;
+}
+.lead{
+  padding: 10px;
+}
+@media (max-width: 600px){
+  .lead{
+    margin: 10px;
+    font-size: 18px;
   }
-  .modal-title{
-    font-family: $main-font;
-    color: black;
+}
+@media (max-width: 1200px){
+  .lead{
+    margin: 10px;
+    font-size: 18px;
   }
-  .modal-body{
-    font-family: $main-font;
-    color: black;
+}
+p {
+  color: $color-grey;
+  font-size: 20px;
+  margin: 20px 80px 20px 80px;
+  text-align: center;
+}
+.price {
+  color: $color-grey;
+  font-size: 20px;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+#productos{
+  background-image: linear-gradient(rgba($color-light-blue2, 0.7), rgba($color-white, 0.7));
+  background-size: cover;
+}
+section {
+  padding-top: 80px;
+}
+@media (max-width: 600px){
+  section{
+    padding-top: 60px;
   }
-  .price {
-    font-size: 1.75rem;
-    padding: 0px !important;
-    margin: 0px !important;
-  }
-  .card{
-    color: $color-light-blue2;
-  }
-  .card.body{
-    margin: 0px;
-    padding: 0px;
-  }
+}

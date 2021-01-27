@@ -2,31 +2,11 @@
   font-family: "Open Sans";
   src: url("../fonts/opensans.ttf"); }
 
-.footerLogo {
-  height: 80px;
-  width: 90px; }
-
 .bg-info {
   background: #00a8cc !important; }
 
 .bg-primary {
   background: #00a8cc !important; }
-
-.text-muted {
-  color: #faf9f9 !important; }
-
-.footerNombre {
-  color: #faf9f9;
-  font-family: "Open Sans";
-  font-size: 18px;
-  margin: 10px 10px 10px 0px; }
-
-.footerTitulo {
-  color: #faf9f9;
-  font-family: "Open Sans";
-  font-size: 18px;
-  text-transform: uppercase;
-  font-style: normal; }
 
 .copy {
   color: #faf9f9;
@@ -34,135 +14,48 @@
   font-size: 14px;
   opacity: 0.7; }
 
-html {
-  scroll-behavior: smooth; }
+footer .footer__logo {
+  height: 80px;
+  width: 90px; }
 
-body {
-  font-size: 1.1rem; }
+footer .footer__nombre {
+  color: #faf9f9;
+  font-family: "Open Sans";
+  font-size: 18px;
+  margin: 10px 10px 10px 0px; }
 
-main {
-  background-color: #faf9f9; }
+footer .footer__titulo {
+  color: #faf9f9;
+  font-family: "Open Sans";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+  margin: 0px; }
 
-a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-  color: #faf9f9; }
+.text-muted {
+  color: #faf9f9 !important; }
+
+a:link, a:visited, a:active {
+  color: #faf9f9;
+  text-decoration: none; }
 
 a:hover {
   color: #faf9f9;
   font-weight: bold; }
 
-h2 {
-  font-family: "Open Sans";
-  font-size: 1, 5rem;
-  color: #00a8cc;
-  font-weight: bold;
-  text-align: center;
-  font-style: italic; }
-
-h2.white {
-  color: #faf9f9; }
-
-p {
-  font-size: 20px;
-  color: #6e6e6e;
-  margin: 20px 80px 20px 80px;
-  text-align: center; }
-
-form label {
-  display: block;
-  padding: 10px 10px 10px 0px; }
-
-div.form-group {
-  margin: 0px 0px 0px 0px; }
-
-#button {
-  display: inline; }
-
-.form-control::placeholder {
-  font-size: 0.95rem;
-  color: #aaa;
-  font-style: italic; }
-
-section {
-  padding-top: 80px; }
-
-#productos {
-  background-image: linear-gradient(rgba(0, 168, 204, 0.7), rgba(88, 214, 255, 0.7));
-  background-size: cover; }
-
-.nosotrosIcon {
-  font-size: 80px;
-  color: #00a8cc; }
-
-.section__galeriaproductos {
-  display: grid;
-  grid-gap: 10px;
-  padding: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center; }
-  .section__galeriaproductos .imgProductos {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  .section__galeriaproductos .galeriaImg:nth-child(3) {
-    grid-row-start: span 2; }
-  .section__galeriaproductos .galeriaImg:nth-child(6) {
-    grid-column-start: span 2; }
-  .section__galeriaproductos .galeriaImg:nth-child(9) {
-    grid-column-start: span 2; }
-  .section__galeriaproductos .galeriaImg:nth-child(10) {
-    grid-row-start: span 2; }
-  .section__galeriaproductos .galeriaImg:nth-child(12) {
-    grid-column-start: span 2; }
-
-@media (min-width: 768px) {
-  .section__galeriaproductos {
-    grid-template-columns: repeat(4, 1fr);
-    padding: 10px 150px 10px 150px; }
-    .section__galeriaproductos .galeriaImg:nth-child(3) {
-      grid-column-start: span 2; }
-    .section__galeriaproductos .galeriaImg:nth-child(6) {
-      grid-column-start: span 3; }
-    .section__galeriaproductos .galeriaImg:nth-child(8) {
-      grid-column-start: span 2; }
-    .section__galeriaproductos .galeriaImg:nth-child(10) {
-      grid-row-start: span 2; }
-    .section__galeriaproductos .galeriaImg:nth-child(11) {
-      grid-column-start: span 1; }
-    .section__galeriaproductos .galeriaImg:nth-child(12) {
-      grid-column-start: span 2; } }
+body {
+  font-size: 1.1rem; }
 
 .btn-info {
   background-color: #00a8cc;
   border-color: #00a8cc;
   color: #faf9f9;
-  margin: 20px 0px 20px 10px; }
+  margin: 20px 0px 50px 10px; }
 
 .btn-info:hover {
   background-color: #58d6ff;
   border-color: #58d6ff;
   color: #faf9f9; }
-
-.custom-switch {
-  margin-top: 20px; }
-
-.custom-control-label {
-  padding: 0px; }
-
-.modal-title {
-  font-family: "Open Sans";
-  color: black; }
-
-.modal-body {
-  font-family: "Open Sans";
-  color: black; }
-
-.price {
-  font-size: 1.75rem;
-  padding: 0px !important;
-  margin: 0px !important; }
 
 .card {
   color: #00a8cc; }
@@ -171,59 +64,116 @@ section {
   margin: 0px;
   padding: 0px; }
 
-header .header__logo {
-  height: 40px; }
+.custom-switch {
+  margin-top: 20px; }
 
-@media (max-width: 340px) {
-  header .header__logo {
-    height: 30px; } }
+.custom-control-label {
+  padding: 0px; }
 
-header .header__nombre {
-  color: #faf9f9;
+div.form-group {
+  margin: 0px 0px 0px 0px; }
+
+.form-control::placeholder {
+  color: #aaa;
+  font-size: 0.95rem;
+  font-style: italic; }
+
+form label {
+  display: block;
+  padding: 10px 10px 10px 0px; }
+
+html {
+  scroll-behavior: smooth; }
+
+h2 {
+  color: #00a8cc;
   font-family: "Open Sans";
-  font-size: 18px;
-  margin: 10px 10px 10px 10px; }
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px; }
 
-@media (max-width: 340px) {
-  header .header__nombre {
-    height: 30px;
-    font-size: 1rem;
-    margin: 0px;
-    padding: 5px; } }
+h2.white {
+  color: #faf9f9; }
 
-header #portada {
-  width: 100%;
-  height: auto; }
+@media (max-width: 600px) {
+  h2 {
+    font-size: 30px; } }
 
-header .navbar-brand {
-  display: flex;
-  justify-items: flex-start;
-  margin: 0px; }
+main {
+  background-color: #faf9f9; }
 
-header .logoRedes {
-  width: 25px;
-  height: 25px; }
+.modal-body {
+  color: #142850;
+  font-family: "Open Sans"; }
 
-header .redes {
+.modal-title {
+  color: #142850;
+  font-family: "Open Sans"; }
+
+.nosotrosIcon {
+  color: #00a8cc;
+  font-size: 80px; }
+
+@media (max-width: 600px) {
+  .nosotrosIcon {
+    font-size: 50px; } }
+
+.lead {
+  padding: 10px; }
+
+@media (max-width: 600px) {
+  .lead {
+    margin: 10px;
+    font-size: 18px; } }
+
+@media (max-width: 1200px) {
+  .lead {
+    margin: 10px;
+    font-size: 18px; } }
+
+p {
+  color: #858282;
   font-size: 20px;
-  padding-top: 4px;
-  margin-left: -15px; }
+  margin: 20px 80px 20px 80px;
+  text-align: center; }
 
-header .navbar {
-  background: linear-gradient(60deg, #142850 10%, #00a8cc 80%);
-  background: -webkit-linear-gradient(60deg, #142850 10%, #00a8cc 80%);
-  background: -moz-linear-gradient(60deg, #142850 10%, #00a8cc 80%); }
+.price {
+  color: #858282;
+  font-size: 20px;
+  padding: 0px !important;
+  margin: 0px !important; }
 
-header .nav-link {
-  font-family: "Open Sans";
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 11px;
-  margin-left: 11px;
-  transition: transform .1s; }
+#productos {
+  background-image: linear-gradient(rgba(0, 168, 204, 0.7), rgba(250, 249, 249, 0.7));
+  background-size: cover; }
 
-header .nav-link:hover {
-  transform: scale(1.2); }
+section {
+  padding-top: 80px; }
+
+@media (max-width: 600px) {
+  section {
+    padding-top: 60px; } }
+
+.bg-dark {
+  background: transparent !important;
+  transition: 0.75s ease; }
+
+@media (max-width: 991px) {
+  .bg-dark {
+    background: #00a8cc !important; } }
+
+.bg-dark.scrolled {
+  background: rgba(0, 168, 204, 0.8) !important; }
+
+@media (max-width: 991px) {
+  .bg-dark.scrolled {
+    background: #00a8cc !important; } }
+
+@media screen and (max-width: 990px) {
+  .carousel {
+    padding-top: 50px; } }
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
@@ -231,21 +181,54 @@ header .nav-link:hover {
 .custom-toggler.navbar-toggler {
   border-color: #faf9f9; }
 
-.navbar .navbar-collapse {
+.header__logo {
+  height: 40px; }
+
+@media (max-width: 340px) {
+  .header__logo {
+    height: 30px; } }
+
+.header__nombre {
+  color: #faf9f9;
+  font-family: "Open Sans";
+  font-size: 18px;
+  margin: 10px 10px 10px 10px; }
+
+@media (max-width: 340px) {
+  .header__nombre {
+    font-size: 1rem;
+    height: 30px;
+    margin: 0px;
+    padding: 5px; } }
+
+.logoRedes {
+  font-size: 20px;
+  padding-top: 4px;
+  margin-left: -15px; }
+
+.navbar {
+  background: linear-gradient(60deg, #142850 10%, #00a8cc 80%);
+  background: -webkit-linear-gradient(60deg, #142850 10%, #00a8cc 80%);
+  background: -moz-linear-gradient(60deg, #142850 10%, #00a8cc 80%); }
+
+.navbar-brand {
+  display: flex;
+  justify-items: flex-start;
+  margin: 0px; }
+
+.navbar-collapse {
   text-align: center; }
 
-.bg-dark {
-  background: transparent !important;
-  transition: 0.75s ease; }
+.nav-link {
+  font-family: "Open Sans";
+  font-size: 14px;
+  margin-top: 11px;
+  margin-left: 11px;
+  text-transform: uppercase;
+  transition: transform .1s; }
 
-.bg-dark.scrolled {
-  background: rgba(0, 168, 204, 0.8) !important; }
-
-@media (max-width: 991px) {
-  .bg-dark {
-    background: #00a8cc !important; }
-  .bg-dark.scrolled {
-    background: #00a8cc !important; } }
+.nav-link:hover {
+  transform: scale(1.2); }
 
 .presentacion {
   position: absolute;
@@ -257,20 +240,6 @@ header .nav-link:hover {
   font-family: "Open Sans";
   text-align: center;
   white-space: nowrap; }
-  .presentacion h1 {
-    font-size: 65px;
-    font-weight: bold;
-    text-shadow: #00587a 2px 2px; }
-  .presentacion h3 {
-    text-shadow: #00587a 2px 2px; }
-  @media screen and (max-width: 990px) {
-    .presentacion h1 {
-      margin-top: 50px;
-      font-size: 20px; } }
-  @media screen and (max-width: 630px) {
-    .presentacion h1 {
-      margin-top: 50px;
-      font-size: 15px; } }
   .presentacion .btn {
     border-radius: 30px;
     padding: 15px 30px 15px 30px;
@@ -283,14 +252,30 @@ header .nav-link:hover {
     background-color: #00a8cc;
     border-color: #00a8cc;
     color: #faf9f9; }
+  .presentacion h1 {
+    font-size: 65px;
+    font-weight: bold;
+    text-shadow: #00587a 2px 2px; }
+  @media screen and (max-width: 1200px) {
+    .presentacion h1 {
+      font-size: 40px; } }
+  @media screen and (max-width: 630px) {
+    .presentacion h1 {
+      font-size: 20px; } }
+  .presentacion h3 {
+    text-shadow: #00587a 2px 2px; }
+  @media screen and (max-width: 1200px) {
+    .presentacion h3 {
+      font-size: 20px; } }
+  @media screen and (max-width: 630px) {
+    .presentacion h3 {
+      font-size: 15px;
+      margin-top: 20px; } }
 
 @media screen and (max-width: 400px) {
   .presentacion .btn {
-    border-radius: 30px;
+    border-radius: 20px;
     font-weight: bold;
-    font-size: 0.6rem;
-    padding: 10px; } }
-
-@media screen and (max-width: 990px) {
-  .carousel {
-    padding-top: 50px; } }
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 10px; } }

@@ -1,32 +1,35 @@
-  .footerLogo{
+.bg-info{
+  background: $color-light-blue2 !important;
+}
+.bg-primary{
+  background: $color-light-blue2 !important;
+}
+.copy{
+  color: $color-white;
+  font-family: $main-font;
+  font-size: 14px;
+  opacity: 0.7;
+}
+footer{
+  .footer__logo{
     height: 80px;
     width: 90px;
   }
-  .bg-info{
-      background: $color-light-blue2 !important;
-    }
-  .bg-primary{
-    background: $color-light-blue2 !important;
-  }
-  .text-muted{
-    color: $color-white !important;
-  }
-  .footerNombre{
+  .footer__nombre{
     color: $color-white;
     font-family: $main-font;
     font-size: 18px;
     margin: 10px 10px 10px 0px;
-    }
-  .footerTitulo{
+  }
+  .footer__titulo{
     color: $color-white;
     font-family: $main-font;
     font-size: 18px;
     text-transform: uppercase;
     font-style: normal;
+    margin: 0px;
   }
-  .copy{
-    color: $color-white;
-    font-family: $main-font;
-    font-size: 14px;
-    opacity: 0.7;
+}
+.text-muted{
+  color: $color-white !important;
   }
