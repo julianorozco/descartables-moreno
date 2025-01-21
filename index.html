@@ -14,6 +14,9 @@
     <script src="https://kit.fontawesome.com/fd6ed05c21.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <a href="https://wa.me/5491122375172?text=Hola,%20vengo%20del%20sitio%20web%20de%20Descartables%20Moreno%20y%20quiero%20recibir%20más%20información." class="whatsapp-button" target="_blank">
+    <img src="img/WhatsApp_icon.png" alt="WhatsApp">
+</a>
   <header>
 <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top bg-dark">
@@ -279,7 +282,7 @@
     </div>
     <div class="bg-primary">
       <div class="container text-center">
-        <p class="text-muted mb-0 py-4 copy d-none d-sm-block">2021 Copyright © Todos los derechos reservados - Descartables Moreno</p>
+        <p class="text-muted mb-0 py-4 copy d-none d-sm-block"><span id="currentYear"></span> Copyright © Todos los derechos reservados - Descartables Moreno</p>
       </div>
     </div>
   </footer>
@@ -304,6 +307,9 @@
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
+</script>
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
