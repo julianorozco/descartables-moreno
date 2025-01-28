@@ -85,22 +85,6 @@ form label {
 html {
   scroll-behavior: smooth; }
 
-h2 {
-  color: #00a8cc;
-  font-family: "Open Sans";
-  font-size: 40px;
-  font-style: italic;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px; }
-
-h2.white {
-  color: #faf9f9; }
-
-@media (max-width: 600px) {
-  h2 {
-    font-size: 30px; } }
-
 main {
   background-color: #faf9f9; }
 
@@ -144,10 +128,6 @@ p {
   font-size: 20px;
   padding: 0px !important;
   margin: 0px !important; }
-
-#productos {
-  background-image: linear-gradient(rgba(0, 168, 204, 0.7), rgba(250, 249, 249, 0.7));
-  background-size: cover; }
 
 section {
   padding-top: 80px; }
@@ -229,56 +209,6 @@ section {
 
 .nav-link:hover {
   transform: scale(1.2); }
-
-.presentacion {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: "Open Sans";
-  text-align: center;
-  white-space: nowrap; }
-  .presentacion .btn {
-    border-radius: 30px;
-    padding: 15px 30px 15px 30px;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: #faf9f9;
-    border-color: #faf9f9;
-    color: #00a8cc; }
-  .presentacion .btn:hover {
-    background-color: #00a8cc;
-    border-color: #00a8cc;
-    color: #faf9f9; }
-  .presentacion h1 {
-    font-size: 65px;
-    font-weight: bold;
-    text-shadow: #00587a 2px 2px; }
-  @media screen and (max-width: 1200px) {
-    .presentacion h1 {
-      font-size: 40px; } }
-  @media screen and (max-width: 630px) {
-    .presentacion h1 {
-      font-size: 20px; } }
-  .presentacion h3 {
-    text-shadow: #00587a 2px 2px; }
-  @media screen and (max-width: 1200px) {
-    .presentacion h3 {
-      font-size: 20px; } }
-  @media screen and (max-width: 630px) {
-    .presentacion h3 {
-      font-size: 15px;
-      margin-top: 20px; } }
-
-@media screen and (max-width: 400px) {
-  .presentacion .btn {
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 10px;
-    padding: 10px;
-    margin-top: 10px; } }
     
 .whatsapp-button {
   position: fixed;
@@ -307,4 +237,28 @@ section {
 .whatsapp-button:hover {
   background-color: #1ebd5a;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-item img {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-item img {
+    height: 300px;
+  }
 }

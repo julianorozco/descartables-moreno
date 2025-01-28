@@ -51,11 +51,11 @@ html{
 h2 {
   color: $color-light-blue2;
   font-family: $main-font;
-  font-size: 40px;
-  font-style: italic;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   margin: 10px;
+  text-transform: uppercase;
 }
 h2.white{
   color: $color-white;
@@ -112,15 +112,24 @@ p {
   padding: 0px !important;
   margin: 0px !important;
 }
-#productos{
-  background-image: linear-gradient(rgba($color-light-blue2, 0.7), rgba($color-white, 0.7));
-  background-size: cover;
+
+#productos {
+  background-color: $color-white;
 }
+
 section {
-  padding-top: 80px;
+  padding: 30px;
+  border-bottom: 2px solid #ddd;
 }
 @media (max-width: 600px){
   section{
-    padding-top: 60px;
+    padding-top: 20px;
   }
+}
+ul {
+  list-style-type: none; 
+  padding: 50px;
+}
+li {
+  margin: 5px;
 }

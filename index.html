@@ -25,6 +25,7 @@
     ></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scss/main.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png" />
@@ -123,7 +124,7 @@
               <h3 class="d-none d-lg-block d-xl-block">
                 Desde 1990 brindando la mejor calidad, atención y servicio en
               </h3>
-              <h1 class="d-none d-lg-block d-xl-block">Pañales para adultos</h1>
+              <h1 class="d-block">Pañales para adultos</h1>
               <br /><a href="#productos" class="btn btn-info">VER PRODUCTOS</a>
             </div>
             <img
@@ -138,7 +139,7 @@
               <h3 class="d-none d-lg-block d-xl-block">
                 Desde 1990 brindando la mejor calidad, atención y servicio en
               </h3>
-              <h1 class="d-none d-lg-block d-xl-block">Insumos médicos</h1>
+              <h1 class="d-block">Insumos médicos</h1>
               <br /><a href="#productos" class="btn btn-info">VER PRODUCTOS</a>
             </div>
             <img
@@ -153,7 +154,7 @@
               <h3 class="d-none d-lg-block d-xl-block">
                 Desde 1990 brindando la mejor calidad, atención y servicio en
               </h3>
-              <h1 class="d-none d-lg-block d-xl-block">Material descartable</h1>
+              <h1 class="d-block">Material descartable</h1>
               <br /><a href="#productos" class="btn btn-info">VER PRODUCTOS</a>
             </div>
             <img
@@ -185,11 +186,11 @@
         <div class="feature-1 py-1 py-md-1">
           <div class="container">
             <div class="row">
-              <div
-                class="feature-intro text-center col-md-10 col-xl-8 mx-md-auto"
-              >
+              <div>
                 <h2 class="wow animate__animated animate__fadeIn">Nosotros</h2>
-                <p class="lead wow animate__animated animate__fadeIn">
+                <p
+                  class="lead text-center text-md-justify wow animate__animated animate__fadeIn"
+                >
                   Somos una empresa familiar con más de 30 años de experiencia,
                   dedicada a la comercialización de pañales para adultos e
                   insumos médicos desde 1990. A lo largo de nuestra trayectoria,
@@ -247,7 +248,7 @@
       <!-- Productos -->
       <section id="productos">
         <div class="container">
-          <h2 class="wow animate__animated animate__fadeIn white">Productos</h2>
+          <h2 class="wow animate__animated animate__fadeIn">Productos</h2>
           <div class="row">
             <div
               class="col-md-4 mt-4 mt-sm-0 card-container wow animate__animated animate__slideInLeft"
@@ -256,14 +257,10 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="img/barbijo1.jpg"
-                  alt="Mission T-Shirts Gear Image"
+                  alt="barbijo"
                 />
                 <div class="card-body p-2">
-                  <h5
-                    class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto"
-                  >
-                    Barbijos
-                  </h5>
+                  <h5 class="lead text-secondary">Barbijos de friselina</h5>
                 </div>
               </div>
             </div>
@@ -274,13 +271,11 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="img/ambo.jpg"
-                  alt="Mission T-Shirts Gear Image"
+                  alt="ambo"
                 />
                 <div class="card-body p-2">
-                  <h5
-                    class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto"
-                  >
-                    Ambos
+                  <h5 class="lead text-secondary">
+                    Ambos en variedad de talles y colores
                   </h5>
                 </div>
               </div>
@@ -292,14 +287,10 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="img/guantes.jpg"
-                  alt="Mission T-Shirts Gear Image"
+                  alt="guantes"
                 />
                 <div class="card-body p-2">
-                  <h5
-                    class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto"
-                  >
-                    Guantes
-                  </h5>
+                  <h5 class="lead text-secondary">Guantes de latex</h5>
                 </div>
               </div>
             </div>
@@ -310,14 +301,10 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="img/aposito.jpg"
-                  alt="Mission T-Shirts Gear Image"
+                  alt="aposito"
                 />
                 <div class="card-body p-2">
-                  <h5
-                    class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto"
-                  >
-                    Apósitos
-                  </h5>
+                  <h5 class="lead text-secondary">Apósitos</h5>
                 </div>
               </div>
             </div>
@@ -328,17 +315,30 @@
                 <img
                   class="img-fluid d-block mx-auto"
                   src="img/frasco.jpeg"
-                  alt="Mission T-Shirts Gear Image"
+                  alt="frasco"
                 />
                 <div class="card-body p-2">
-                  <h5
-                    class="card-title font-weight-semi-bold mb-3 w-xl-220p mx-auto"
-                  >
-                    Frascos
-                  </h5>
+                  <h5 class="lead text-secondary">Frascos estériles</h5>
                 </div>
               </div>
             </div>
+            <div
+              class="col-md-4 mt-4 mt-sm-0 card-container wow animate__animated animate__slideInRight"
+            >
+              <div class="card text-center product m-3">
+                <img
+                  class="img-fluid d-block mx-auto"
+                  src="img/pañales.jpg"
+                  alt="pañales"
+                />
+                <div class="card-body p-2">
+                  <h5 class="lead text-secondary">Pañales para adultos</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container text-center p-4">
+            <h5 class="text-secondary">Y muchos productos más..</h5>
           </div>
         </div>
       </section>
@@ -347,10 +347,9 @@
       <section id="envios">
         <div class="container">
           <h2 class="wow animate__animated animate__fadeIn">Envíos</h2>
-          <p class="lead wow animate__animated animate__fadeIn">
-            Realizamos entregas de productos a zonas aledañas mediante
-            transporte propio. Para el resto del país los envíos son realizado a
-            través de Correo Argentino.
+          <p class="lead text-center wow animate__animated animate__fadeIn">
+            Realizamos envíos a CABA y GBA. Por envíos al resto del país,
+            consultar.
           </p>
         </div>
         <div>
@@ -371,102 +370,13 @@
       <section id="contacto">
         <div class="container">
           <h2 class="wow animate__animated animate__fadeIn">Contacto</h2>
+          <ul>
+            <li><span class="text-info">WhatsApp: </span><br><a href="https://wa.me/5491122375172?text=Hola,%20vengo%20del%20sitio%20web%20de%20Descartables%20Moreno%20y%20quiero%20recibir%20más%20información." class="text-secondary">1122375172</a></li>
+            <li><span class="text-info">Email: </span><br><a href="mailto:claudio.larino1963@gmail.com" class="text-secondary">claudio.larino1963@gmail.com</a></li>
+        </ul>        
           <p class="lead wow animate__animated animate__fadeIn">
-            Envíenos su consulta y le estaremos respondiendo a la brevedad:
+            Envíanos tu consulta y responderemos a la mayor brevedad.
           </p>
-          <div class="container wow animate__animated animate__fadeIn">
-            <div class="col-md-12">
-              <form name="formulario-contacto" action="" method="POST">
-                <div class="form-group">
-                  <label for="input-name">Nombre:</label>
-                  <input
-                    type="text"
-                    name="input-name"
-                    id="input-name"
-                    class="form-control"
-                  />
-                  <label for="input-mail">E-mail:</label>
-                  <input
-                    type="email"
-                    name="input-mail"
-                    id="input-mail"
-                    class="form-control"
-                  />
-                  <label for="lugar-residencia">Lugar de residencia:</label>
-                  <select
-                    name="lugar"
-                    id="lugar-residencia"
-                    class="form-control"
-                  >
-                    <option selected="selected" value="0">
-                      -Seleccione una opción-
-                    </option>
-                    <option value="caba">CABA</option>
-                    <option value="bsas">Gran Buenos Aires</option>
-                    <option value="provincia">Otra provincia</option>
-                  </select>
-                  <label for="input-text"></label>
-                  <textarea
-                    name="input-text"
-                    id="input-text"
-                    cols="30"
-                    rows="5"
-                    class="form-control"
-                    placeholder="Escribínos tu consulta.."
-                  ></textarea>
-                  <button type="reset" class="btn btn-info">Restablecer</button>
-                  <button
-                    type="button"
-                    class="btn btn-info"
-                    data-toggle="modal"
-                    data-target="#exampleModal"
-                  >
-                    Enviar
-                  </button>
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">
-                            Gracias por su mensaje!
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          Estaremos respondiendo su consulta a la brevedad.
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-info"
-                            data-dismiss="modal"
-                          >
-                            Cerrar
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /Modal -->
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
       <!-- /Contacto -->
@@ -511,7 +421,7 @@
             <ul class="list-inline text-center mb-0">
               <li class="list-inline-item mb-2">
                 <a
-                  class=""
+                  class="logoRedes"
                   href="https://www.instagram.com/descartables.moreno/"
                   target="blank"
                   ><i class="fab fa-instagram"></i
@@ -519,7 +429,7 @@
               </li>
               <li class="list-inline-item mb-2">
                 <a
-                  class=""
+                  class="logoRedes p-3"
                   href="https://www.facebook.com/Descartables-Moreno-104193278086879"
                   target="blank"
                   ><i class="fab fa-facebook"></i
