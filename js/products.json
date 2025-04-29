@@ -1,0 +1,96 @@
+{
+    "categories": [
+      "pañales",
+      "apósitos",
+      "algodón",
+      "otros insumos"
+    ],
+    "products": [
+      {
+        "title": "Pañales para adultos",
+        "image": "img/pañales.jpg",
+        "category": "pañales"
+      },
+      {
+        "title": "Pañal Comodín Básico Grande",
+        "image": "img/comodin_basico_grande.jpg",
+        "category": "pañales"
+      },
+      {
+        "title": "Pañal Comodín Basico XG x 100",
+        "image": "img/comodin_basico_xg.jpg",
+        "category": "pañales"
+      },
+      {
+        "title": "Pañal Comodín Anatómico (todos los talles)",
+        "image": "img/comodin_anatomico.jpg",
+        "category": "pañales"
+      },
+      {
+        "title": "Refuerza pañal Comodín XG x 20",
+        "image": "img/comodin_refuerza_xg.jpg",
+        "category": "apósitos"
+      },
+      {
+        "title": "Pañal Comodín Básico XXG",
+        "image": "img/comodin_basico_xxg.jpg",
+        "category": "pañales"
+      },
+      {
+        "title": "Pañales adulto (ropa interior) M, L, XL marca Comodín",
+        "image": "img/comodin_ropa_interior.jpg",
+        "category": "pañales"
+      },
+      {
+        "title": "Pañales adulto (ropa interior) M, L, XL marca TENA",
+        "image": "img/tena_adultos.jpg",
+        "category": "pañales"
+      },
+      {
+        "title": "Pañales adulto (ropa interior) P/M marca Plenitud",
+        "image": "img/plenitud_adultos.jpg",
+        "category": "pañales"
+      },
+      {
+        "title": "Pañales adulto (ropa interior) M, G, XG, XXG marca Hennia",
+        "image": "img/hennia_adultos.jpg",
+        "category": "pañales"
+      },
+      {
+        "title": "Cubre colchón elastizado PVC atóxico perfumado (todos los tamaños)",
+        "image": "img/cubre_colchon.jpg",
+        "category": "otros insumos"
+      },
+      {
+        "title": "Pieza de gasa tubular doble",
+        "image": "img/gasa_tubular_doble.jpg",
+        "category": "otros insumos"
+      },
+      {
+        "title": "Algodón Saenz Peña x 500 gr",
+        "image": "img/algodon_saenz.jpg",
+        "category": "algodón"
+      },
+      {
+        "title": "Algodón Doncella x 500 gr",
+        "image": "img/algodon_doncella.jpg",
+        "category": "algodón"
+      },
+      {
+        "title": "Caja de cinta hipoalergénica SYRA",
+        "image": "img/cinta_syra.jpg",
+        "category": "otros insumos"
+      },
+      {
+        "title": "Guantes de latex",
+        "image": "img/guantes.jpg",
+        "category": "otros insumos"
+      },
+      {
+        "title": "Frascos estériles",
+        "image": "img/frasco.jpeg",
+        "category": "otros insumos"
+      }
+    ]
+  }
+  
