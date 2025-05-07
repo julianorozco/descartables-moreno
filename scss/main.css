@@ -194,8 +194,17 @@ section {
 @media (max-width: 600px) {
   section {
     padding-top: 20px;
+    padding: 0px;
   }
 }
+
+@media (max-width: 600px) {
+  section {
+    padding-top: 20px;
+    padding: 0px;
+  }
+}
+
 .itemscontacto {
   list-style-type: none;
   padding: 20px 0px 20px 0px;
@@ -369,3 +378,22 @@ item {
     margin-top: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
+
+@media (max-width: 576px) {
+.img-fixed {
+  max-height: 100px; /* antes podía ser más grande */
+  object-fit: contain;
+}
+}
+
+@media (max-width: 576px) {
+  .card-body h5.lead {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 560px) {
+  p {
+    margin: 1px;
+  }
+}

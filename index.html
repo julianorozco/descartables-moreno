@@ -77,7 +77,11 @@
       <img src="img/WhatsApp_icon.png" alt="WhatsApp" />
     </a>
     <header>
-      <!-- Navbar -->
+       <!-- Texto fijo en la parte superior -->
+       <div class="fixed-top-text text-uppercase">
+        <span>Con tu primera compra tenés un 10% de descuento</span>
+      </div>
+      <!-- Navbar fijo -->
       <nav class="navbar navbar-expand-lg fixed-top bg-dark">
         <div class="container">
           <a class="navbar-brand" href="index.html">
@@ -113,31 +117,28 @@
                 <a class="nav-link" href="#contacto">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href=""></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href=""></a>
-              </li>
-              <li class="nav-item">
                 <a
                   class="nav-link logoRedes"
                   href="https://www.instagram.com/descartables.moreno/"
                   target="blank"
-                  ><i class="fab fa-instagram logoRedes"></i
-                ></a>
+                >
+                  <i class="fab fa-instagram logoRedes"></i>
+                </a>
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link logoRedes"
                   href="https://www.facebook.com/Descartables-Moreno-104193278086879"
                   target="blank"
-                  ><i class="fab fa-facebook logoRedes"></i
-                ></a>
+                >
+                  <i class="fab fa-facebook logoRedes"></i>
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
       <!-- /Navbar -->
       <!-- Galeria -->
       <div
@@ -229,7 +230,7 @@
               </div>
             </div>
             <div class="row feature-list">
-              <div class="col-md-6 wow animate__animated animate__fadeInUp">
+              <div class="col-6 col-md-6 wow animate__animated animate__fadeInUp">
                 <div class="feature-box text-center p-3 p-md-4 mx-auto">
                   <div class="feature-icon mx-auto">
                     <i class="fas fa-award nosotrosIcon"></i>
@@ -239,7 +240,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 wow animate__animated animate__fadeInUp">
+              <div class="col-6 col-md-6 wow animate__animated animate__fadeInUp">
                 <div class="feature-box text-center p-3 p-md-4 mx-auto">
                   <div class="feature-icon mx-auto">
                     <i class="fas fa-headset nosotrosIcon"></i>
@@ -249,7 +250,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 wow animate__animated animate__fadeInUp">
+              <div class="col-6 col-md-6 wow animate__animated animate__fadeInUp">
                 <div class="feature-box text-center p-3 p-md-4 mx-auto">
                   <div class="feature-icon mx-auto">
                     <i class="fas fa-house-chimney-medical nosotrosIcon"></i>
@@ -260,7 +261,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6 wow animate__animated animate__fadeInUp">
+              <div class="col-6 col-md-6 wow animate__animated animate__fadeInUp">
                 <div class="feature-box text-center p-3 p-md-4 mx-auto">
                   <div class="feature-icon mx-auto">
                     <i class="fas fa-file-invoice nosotrosIcon"></i>
@@ -269,6 +270,7 @@
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </section>
@@ -278,44 +280,61 @@
         <div class="container">
           <h2>Productos</h2>
           <!-- Filtro de Categorías (Pills) -->
-          <div class="d-flex flex-column align-items-center m-3">
-             <!-- Campo de búsqueda por título -->
-             <div class="input-group" style="width: 100%; max-width: 500px;">
-              <input type="text" class="form-control" placeholder="Buscar por producto o marca.." id="search-input">
+          <div class="d-flex flex-column align-items-center m-2 m-sm-1 m-md-4">
+            <!-- Campo de búsqueda por título -->
+            <div class="input-group" style="width: 100%; max-width: 500px">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar por producto o marca.."
+                id="search-input"
+              />
               <span class="input-group-text">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </span>
             </div>
             <!-- Categorías -->
-            <div id="category-pills" class="m-3 text-center" style="width: 100%; max-width: 500px;">
+            <div
+              id="category-pills"
+              class="text-center m-2 m-sm-1 m-md-4"
+              style="width: 100%; max-width: 500px"
+            >
               <!-- Las categorías se insertarán aquí dinámicamente -->
             </div>
           </div>
-          
+
           <!-- Contenedor de productos -->
           <div id="product-container" class="row">
             <!-- Los productos se insertarán aquí dinámicamente -->
           </div>
-          <div id="no-results-message" class="d-none text-center">
-            <p>No encontramos el producto que estás buscando en nuestro sitio</p>
-            <a href="https://wa.me/5491122375172?text=Hola,%20vengo%20del%20sitio%20web%20de%20Descartables%20Moreno%20y%20quiero%20recibir%20más%20información." target="_blank">
-              <button class="btn btn-success">
-                Consúltanos por WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+          <div id="no-results-message" class="d-none text-center px-3 py-2">
+            <p>
+              No encontramos el producto que estás buscando en nuestro sitio
+            </p>
+            <a
+              href="https://wa.me/5491122375172?text=Hola,%20vengo%20del%20sitio%20web%20de%20Descartables%20Moreno%20y%20quiero%20recibir%20más%20información."
+              target="_blank"
+              class="d-block d-sm-inline-block"
+            >
+              <button class="btn btn-success w-100 w-sm-auto mt-2">
+                Consúltanos por WhatsApp <i class="fa-brands fa-whatsapp"></i>
+              </button>
             </a>
-          </div>          
-        </div>
-          <!-- Descripción debajo del título -->
-          <div class="container text-center p-4">
-            <h4 class="text-secondary p-4">
-              Contamos con más de 8000 artículos, con variedad de tamaños y
-              diferentes marcas. Consúltanos!
-            </h4>
           </div>
+          
+        </div>
+        <!-- Descripción debajo del título -->
+        <div class="container text-center p-4">
+          <h4 class="text-secondary p-4">
+            Contamos con más de 8000 artículos, con variedad de tamaños y
+            diferentes marcas. Consúltanos!
+          </h4>
+        </div>
       </section>
-      
+
       <!-- Incluir el archivo JS -->
       <script src="filter.js"></script>
-      
+
       <!-- /Productos -->
       <!-- Envios -->
       <section id="envios">

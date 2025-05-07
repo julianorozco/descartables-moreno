@@ -124,6 +124,7 @@ section {
 @media (max-width: 600px){
   section{
     padding-top: 20px;
+    padding: 0px;
   }
 }
 .itemscontacto {
@@ -132,4 +133,10 @@ section {
 }
 item {
   margin: 10px;
+}
+
+@media (max-width: 560px) {
+  p {
+    margin: 1px;
+  }
 }

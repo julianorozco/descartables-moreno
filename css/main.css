@@ -124,7 +124,6 @@ body {
     max-height: 340px;
   }
 }
-
 .custom-switch {
   margin-top: 20px;
 }
@@ -209,16 +208,6 @@ p {
   margin: 0px !important;
 }
 
-section {
-  padding-top: 80px;
-}
-
-@media (max-width: 600px) {
-  section {
-    padding-top: 60px;
-  }
-}
-
 .bg-dark {
   background: transparent !important;
   transition: 0.75s ease;
@@ -290,6 +279,7 @@ section {
   background: linear-gradient(60deg, #142850 10%, #00a8cc 80%);
   background: -webkit-linear-gradient(60deg, #142850 10%, #00a8cc 80%);
   background: -moz-linear-gradient(60deg, #142850 10%, #00a8cc 80%);
+  padding-top: 40px;
 }
 
 .navbar-brand {
@@ -374,4 +364,50 @@ section {
   object-fit: contain;
   padding: 5px;
   background-color: #ffffff;
+}
+
+/* Estilo para el mensaje de descuento fijo en la parte superior */
+.fixed-top-text {
+  position: fixed;
+  top: 0;  /* Fija el mensaje en la parte superior */
+  left: 0;
+  right: 0;
+  background-color: #142850; /* Color de fondo */
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 70%;
+  z-index: 9998; /* Asegura que el mensaje esté por debajo del navbar */
+}
+
+/* Establecer un tamaño más pequeño para las pills en pantallas pequeñas */
+@media (max-width: 576px) {
+  #category-pills button {
+    font-size: 0.75rem;  /* Cambia el tamaño de fuente */
+    padding: 0.5rem 1rem; /* Ajusta el padding de los botones */
+  }
+}
+
+/* Evitar que las tarjetas se deformen en pantallas pequeñas */
+@media (max-width: 576px) {
+  .card {
+    height: 200px; /* Ajusta la altura de la tarjeta para mantener la proporción */
+  }
+
+  /* Asegurarse de que las imágenes no se deformen */
+  .card img {
+    object-fit: contain; /* Hace que la imagen cubra el área sin deformarse */
+    height: 180px; /* Ajusta la altura de la imagen para que tenga una proporción adecuada */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    margin: 3px;
+    padding: 0px;
+  }
+  .card-container {
+    padding: 1px;
+  }
+
+.square-card
+{
+  padding: 1px;
+}
 }
